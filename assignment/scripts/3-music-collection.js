@@ -20,6 +20,14 @@ addToCollection(myCollection,"Dark Lane Memo Tapes", "Drake","May 1, 2021");
 addToCollection(myCollection,"So Far Gone", "Drake","Feburary 13, 2009");
 console.log(myCollection);
 
+function showCollection(collection) {
+  for (let album of collection) {
+    const albumInfo = `${album.title} by ${album.artist}, published in ${album.yearPublished}`;
+    console.log(albumInfo);
+  }
+}
+showCollection(myCollection);
+
 
 
 
