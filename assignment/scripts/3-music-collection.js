@@ -7,18 +7,17 @@ function addToCollection(collection, title, artist, yearPublished) {
   const newAlbum ={
     artist: artist,
     title: title,
-    collection: collection,
     yearPublished: yearPublished
   }
   collection.push(newAlbum);
   return newAlbum;
 }
-addToCollection(myCollection,"Views", "Drake","April 16,2016","4th");
-addToCollection(myCollection,"FATD", "Drake","April 16,2016","4th");
-addToCollection(myCollection,"Views", "Drake","April 16,2016","4th");
-addToCollection(myCollection,"Views", "Drake","April 16,2016","4th");
-addToCollection(myCollection,"Views", "Drake","April 16,2016","4th");
-addToCollection(myCollection,"Views", "Drake","April 16,2016","4th");
+addToCollection(myCollection,"Views", "Drake","April 16, 2016");
+addToCollection(myCollection,"FATD", "Drake","October 6th, 2023");
+addToCollection(myCollection,"Take Care", "Drake","November 15th, 2011");
+addToCollection(myCollection,"Certified Lover Boy", "Drake","November 3, 2021");
+addToCollection(myCollection,"Dark Lane Memo Tapes", "Drake","May 1, 2021");
+addToCollection(myCollection,"So Far Gone", "Drake","Feburary 13, 2009");
 console.log(myCollection);
 
 
