@@ -13,10 +13,10 @@ function addToCollection(collection, title, artist, yearPublished) {
   return newAlbum;
 }
 addToCollection(myCollection,"Views", "Drake","April 16, 2016");
-addToCollection(myCollection,"FATD", "Drake","October 6th, 2023");
-addToCollection(myCollection,"Take Care", "Drake","November 15th, 2011");
-addToCollection(myCollection,"Certified Lover Boy", "Drake","November 3, 2021");
-addToCollection(myCollection,"Dark Lane Memo Tapes", "Drake","May 1, 2021");
+addToCollection(myCollection,"Mr. Beat The Road", "Bossman Dlow","March 5th, 2024");
+addToCollection(myCollection,"Vultures 1", "Kanye West","Feburary 9, 2024");
+addToCollection(myCollection,"2 Faced", "Lucki","January 22, 2024");
+addToCollection(myCollection,"Rich off pints", "Icewear Vezzo","May 21, 2021");
 addToCollection(myCollection,"So Far Gone", "Drake","Feburary 13, 2009");
 console.log(myCollection);
 
@@ -28,6 +28,19 @@ function showCollection(collection) {
 }
 showCollection(myCollection);
 
+function findByArtist(collection, artist) {
+  let matchingAlbums = [];
+  for (let album of collection) {
+    if (album.artist === artist) {
+      matchingAlbums.push(album);
+    }
+  }
+  return matchingAlbums;
+}
+let artist1Results = findByArtist(myCollection, "Drake");
+console.log("Albums by Drake:", artist1Results);
+let artist2Results = findByArtist(myCollection, "Ken Carson");
+console.log("Albums by Ken Carson:", artist2Results);
 
 
 
